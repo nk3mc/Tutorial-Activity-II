@@ -1,19 +1,88 @@
 header {
     text-align: center;
-    background-color:red;
+    background-color: lightblue;
     color: white;
 }
 
 #customfooter {
     text-align: center;
-    background-color:blue;
+    background-color: lightblue;
     color: black;
 }
 
-#first{
-    color:orangered
+#first {
+    color: green;
 }
 
-.second{
-    color:green
+.second {
+    color: orangered;
+}
+
+.element {
+    float: left;
+    margin-right: 20px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.skill {
+    width: 360px;
+    background-color: aqua;
+}
+
+.project-item {
+    width: 360px;
+    background-color: orangered;
+    float: left;
+    margin-right: 20px;
+    margin-bottom:16px;
+    color: white;
+}
+
+@media(condition) {
+    /*Based off some code here */
+}
+
+@media(max-width: 600px){
+    body{
+        background-color: lightgreen;
+    }
+
+}
+
+.project-item{
+    background-color: purple;
+}
+/*
+@media(min-width:650px) {
+    body{
+        background-color: pink;
+    }
+
+} /*
+/*min-height & max height*/
+
+
+/*
+@media(condition1) and (condition2) {
+    body{
+        background-color pink;
+    }
+}
+
+
+QUICK TASK:
+ONLY FROM (650px - 800px)
+Make (background-color) in the (body{})--->PINK
+min-width& max-width
+
+*/
+@media (min-width:650px) and (max-width:800px) {
+    body{
+        background-color: pink;
+    }
 }
